@@ -1,34 +1,39 @@
-
-
 while True:
     notas = []
+
     while True:
+        try:
+            entrada = input("Digite uma nota ou 'fim': ")
 
-        entrada = input("Digite uma nota ou 'sair': ")
+            if entrada == "fim":
+                break
 
-        if entrada == "sair":
-            break
+            nota = float(entrada)
 
-        nota = float(entrada)
-        notas.append(nota)
+            if nota < 0 or nota > 10:
+                print("Número inválido")
+                continue
 
-    media = sum(notas) / len(notas)
+            notas.append(nota)
 
-    print(media)
+        except ValueError:
+            print("Nota inválida, digite novamente")
 
-    if media >= 7:
-        resultado = "aprovado"
+    if len(notas) == 0:
+        print("Nenhuma nota foi digitada.")
     else:
-        resultado = "reprovado"
-        pontos = abs(7 - media)
-        print(f"Você precisa de {pontos:.2f} pontos pra passar")
-    
+        media = sum(notas) / len(notas)
 
+        if media >= 7:
+            resultado = "aprovado"
+        else:
+            resultado = "reprovado"
+            pontos = 7 - media
+            print(f"Você precisa de {pontos:.2f} pontos pra passar")
 
-    print(f"Você, suas notas são {notas}, sua média é {media}, e você foi {resultado}")
+        print(f"Suas notas são {notas}, sua média é {media:.2f}, e você foi {resultado}")
+        print(f"Sua maior nota foi {max(notas)} e sua menor {min(notas)}")
 
-    print(f"Sua maior nota foi {max(notas)} e sua menor {min(notas)}")
-    voltar = input("Digite qualquer tecla para voltar ao inicio, digite sair para fechar o programa: ")
+    voltar = input("Digite 'sair' para fechar ou qualquer tecla para reiniciar: ")
     if voltar == "sair":
         break
-    
