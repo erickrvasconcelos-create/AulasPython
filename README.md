@@ -19,7 +19,7 @@ Programa que:
 - mostra se acertou, error, perto ou longe
 - permite jogar novamente ou encerrar o programa
 - 
-- ### 3 - Calculador de médias
+### 3 - Calculador de médias
 Programa que:
 - Você insere livremente suas notas
 - Calcula a média
