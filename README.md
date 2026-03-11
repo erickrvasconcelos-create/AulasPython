@@ -10,3 +10,11 @@ Programa que:
 - valida ano de nascimento
 - calcula idade
 - estima dias e horas vividas
+
+- 
+### Mini-Jogo de adivinhação
+Programa que:
+- você escolhe a dificuldade
+- chuta um número
+- mostra se acertou, error, perto ou longe
+- permite jogar novamente ou encerrar o programa
