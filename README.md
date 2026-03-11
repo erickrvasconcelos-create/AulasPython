@@ -11,14 +11,13 @@ Programa que:
 - calcula idade
 - estima dias e horas vividas
 
-- 
 ### 2 - Mini-Jogo de adivinhação
 Programa que:
 - você escolhe a dificuldade
 - chuta um número
 - mostra se acertou, error, perto ou longe
 - permite jogar novamente ou encerrar o programa
-- 
+  
 ### 3 - Calculador de médias
 Programa que:
 - Você insere livremente suas notas
